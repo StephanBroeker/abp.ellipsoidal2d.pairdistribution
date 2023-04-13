@@ -1,0 +1,37 @@
+title: ' abp.ellipsoids2d.pairdistribution'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Stephan
+    family-names: Bröker
+    affiliation: >-
+      Institut für Theoretische Physik, Center for
+      Soft Nanoscience, Westfälische
+      Wilhelms-Universität Münster, 48149 Münster,
+      Germany
+    orcid: 'https://orcid.org/0000-0003-1295-0161'
+  - given-names: Michael
+    family-names: te Vrugt
+    affiliation: >-
+      Institut für Theoretische Physik, Center for
+      Soft Nanoscience, Westfälische
+      Wilhelms-Universität Münster, 48149 Münster,
+      Germany
+    orcid: 'https://orcid.org/0000-0002-1139-3925'
+  - given-names: Raphael
+    family-names: Wittkowski
+    affiliation: >-
+      Institut für Theoretische Physik, Center for
+      Soft Nanoscience, Westfälische
+      Wilhelms-Universität Münster, 48149 Münster,
+      Germany
+    orcid: 'https://orcid.org/0000-0003-4881-9173'
+keywords:
+  - Active Brownian particles
+  - Active liquid crystal
+  - pair-distribution
+  - pair-correlation
+  - analytical approximation
+license: MIT
