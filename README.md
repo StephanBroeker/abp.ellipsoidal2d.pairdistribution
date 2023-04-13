@@ -1,4 +1,4 @@
-Supplementary materials
+Python module abp.ellipsoids2d.pairdistribution
 =======================
 This folder contains supplementary materials for the article
 
