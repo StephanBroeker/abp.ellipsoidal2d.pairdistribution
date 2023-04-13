@@ -2,8 +2,8 @@ Supplementary materials
 =======================
 This folder contains supplementary materials for the article
 
-*S. Bröker and R. Wittkowski, Pair-distribution function of
-active Brownian ellipsoids in two spatial dimensions, [TODO: arXiv link] (2019)*
+*S. Bröker, M. te Vrugt and R. Wittkowski, Collective dynamics and pair-distribution function
+of active Brownian ellipsoids, [TODO: arXiv link] (2023)*
 
 Contents
 --------
