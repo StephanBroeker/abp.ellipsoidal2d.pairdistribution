@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser(
     description=r"""Display the pair distribution function for a given particle
         distance, Peclet number and packing density and one fixed angle at a certain value.
         The default values are the same as in Fig. 3 of the accompanying
-        article by S. Broeker and R. Wittkowski.
+        article by S. Broeker, M. te Vrugt, and R. Wittkowski.
         """)
 parser.add_argument(
     "-r", metavar="dist", dest="dist", type=float, default=1.0,
