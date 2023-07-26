@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
 
-import abellipsoids2d
+import abp.ellipsoidal2d.pairdistribution as abe2dpdf
 
 # -- Parse args --
 
@@ -13,16 +13,17 @@ parser = argparse.ArgumentParser(
         distance, Peclet number and packing density and one fixed angle at a certain value.
         The default values are the same as in Fig. 3 of the accompanying
         article by S. Broeker, M. te Vrugt, and R. Wittkowski.
-        """)
+        """,
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument(
     "-r", metavar="dist", dest="dist", type=float, default=1.0,
-    help="Particle distance in multiples of sigma (default: 1)")
+    help="Particle distance in multiples of sigma")
 parser.add_argument(
     "-d", metavar="Phi", dest="Phi", type=float, default=0.2,
-    help="Packing density (default: 0.2)")
+    help="Packing density")
 parser.add_argument(
     "-p", metavar="peclet", dest="peclet", type=float, default=10.0,
-    help="Peclet number (default: 10)")
+    help="Peclet number")
 
 
 args = parser.parse_args()
@@ -49,13 +50,10 @@ phi2 = np.linspace(0, 2*np.pi, resolution, endpoint=False)
 r = args.dist  # Just take a single distance
 phi1, phi2 = np.meshgrid(phi1, phi2, indexing='ij')
 # Calculate g
-g = abellipsoids2d.reconstruct_g(r, phi1, phi2, args.peclet, args.Phi)[0]
+g = abe2dpdf.reconstruct_g(r, phi1, phi2, args.peclet, args.Phi)[0]
 
 
 # g is two dimensional;
-
-
-
 xlabel = r"$\phi_1$"
 ylabel = r"$\phi_2$"
 

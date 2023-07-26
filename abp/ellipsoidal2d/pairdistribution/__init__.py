@@ -8,7 +8,7 @@ from ._reconstruct import *
 from ._reconstruct import __all__ as reconstruct_all
 __all__ = reconstruct_all
 
-__author__ = "Stephan Bröker, Raphael Wittkowski"
-__copyright__ = "Copyright (C) 2022 Stephan Bröker, Michael te Vrugt, Raphael Wittkowski"
+__author__ = "Stephan Bröker, Michael te Vrugt, Raphael Wittkowski"
+__copyright__ = "Copyright (c) 2023 Stephan Bröker, Michael te Vrugt, Raphael Wittkowski"
 __license__ = "MIT"
 __version__ = "1.0"

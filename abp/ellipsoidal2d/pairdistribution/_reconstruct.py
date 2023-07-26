@@ -3,7 +3,7 @@
 import os.path
 import numpy as np
 
-from abellipsoids2d.fitfuncs import FOURIERFITFUNCS, PARAMETERFITFUNCS
+from .fitfuncs import FOURIERFITFUNCS, PARAMETERFITFUNCS
 
 __all__ = ["loadParameterFile", "reconstruct_g"] 
 
@@ -23,16 +23,14 @@ EPSILON, SIGMA = 1,1
 def loadParameterFile(filepath):
     r"""Load a parameter CSV file from a given path.
 
-    Parameters
-    ----------
-    path: str
-        Path to CSV file.
+    Args:
+        path (str):
+            Path to CSV file.
 
-    Returns
-    -------
-    params: dict
-        Dictionaries containing all fit parameters
-        for the Fourier coefficients.
+    Returns:
+        **params (dict):**
+            Dictionary containing all fit parameters
+            for the Fourier coefficients.
     """
     params = {}
     # Open file with fit parameters and read line by line every u_i,j
@@ -76,20 +74,19 @@ def loadDefaultParameterFile():
 def reconstruct_g(
         r, phi1, phi2, Pe, Phi, params=None):
     #    r, phi1, phi2, Pe, Phi, params=None):
-    r"""Returns an approximation for g in a given range of particle
+    r"""Returns an approximation for $g$ in a given range of particle
     distances and positional and orientational angles.
 
-    Parameters
-    ----------
-    r: float or array_like
-        Distance(s) at which g will be calculated
-    phi1, phi2: float, array_like or meshgrid of all
-        Positional and orientational angles at which g will be calculated
-    Pe, Phi: float
-        Peclet number and Packing density for which g will be calculated
-    params: dict
-        Parameter dictionary containing all fit parameters necessary for
-        reconstruction. If not set, the included default values will be used.
+    Args:
+        r (float or array_like): Distance(s) at which $g$ will be calculated
+
+        phi1, phi2 (float, array_like or meshgrid of all): Positional
+            and orientational angles at which $g$ will be calculated
+        Pe, Phi (float): Peclet number and Packing density for which $g$ 
+            will be calculated
+        params (dict):
+            Parameter dictionary containing all fit parameters necessary for
+            reconstruction. If not set, the included default values will be used.
     """
     # If params are not set: load default
     if not params:
