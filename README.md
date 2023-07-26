@@ -4,7 +4,7 @@ This folder contains supplementary software for the article
 
 *S. Bröker, M. te Vrugt, and R. Wittkowski, Collective dynamics and pair-distribution function of active Brownian ellipsoids, [TODO: arXiv link] (2023)*
 
-[TODO: Zenodo Badge] (2023)*
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8186194.svg)](https://doi.org/10.5281/zenodo.8186194)
 
 Contents
 --------
